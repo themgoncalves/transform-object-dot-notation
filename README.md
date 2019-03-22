@@ -172,5 +172,5 @@ Distributed under the MIT license. [Click here](/LICENSE) for more information.
 [releases-image]: https://img.shields.io/github/downloads/atom/atom/total.svg
 [releases-url]: https://github.com/themgoncalves/transform-object-dot-notation
 [awesome-url]: https://github.com/themgoncalves/transform-object-dot-notation
-[npm-image]: https://img.shields.io/npm/v/transform-object-dot-notation.svg
-[npm-url]: https://www.npmjs.com/package/transform-object-dot-notation
+[npm-image]: https://img.shields.io/npm/v/@themgoncalves/transform-object-dot-notation.svg
+[npm-url]: https://www.npmjs.com/package/@themgoncalves/transform-object-dot-notation
