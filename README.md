@@ -130,7 +130,7 @@ obj.foo.bar.baz
 ```
 
 ## Release History
-* 0.1.0
+* 0.1.1
     * First release
     * NEW: `optionalChaining` option
 * 0.0.1
