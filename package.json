@@ -1,15 +1,15 @@
 {
-  "name": "babel-plugin-transform-object-dot-notation",
+  "name": "@themgoncalves/transform-object-dot-notation",
   "version": "0.1.0",
   "description": "Transform object string dot notation into object reference",
   "author": "Marcos Gonçalves <contact@themgoncalves.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/themgoncalves/babel-plugin-transform-object-string-dot-notation.git"
+    "url": "https://github.com/themgoncalves/transform-object-dot-notation.git"
   },
   "bugs": {
-    "url": "https://github.com/themgoncalves/babel-plugin-transform-object-string-dot-notation/issues"
+    "url": "https://github.com/themgoncalves/transform-object-dot-notation/issues"
   },
   "publishConfig": {
     "access": "public"
