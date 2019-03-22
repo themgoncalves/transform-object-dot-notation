@@ -1,0 +1,53 @@
+{
+  "name": "babel-plugin-transform-object-dot-notation",
+  "version": "0.1.0",
+  "description": "Transform object string dot notation into object reference",
+  "author": "Marcos Gonçalves <contact@themgoncalves.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themgoncalves/babel-plugin-transform-object-string-dot-notation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themgoncalves/babel-plugin-transform-object-string-dot-notation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin",
+    "dot-notation"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "clean:build": "rm -rf lib/",
+    "build": "npm run clean:build && babel src -d lib",
+    "watch": "npm run clean:build && babel src -d lib -w",
+    "lint": "eslint --ext js src || exit 0",
+    "lint:fix": "eslint --ext js src --fix|| exit 0",
+    "test:unit": "mocha",
+    "test:watch": "mocha -w",
+    "test": "npm run build && npm run lint && npm run test:unit"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/helper-plugin-test-runner": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/register": "^7.4.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.0.2"
+  }
+}
