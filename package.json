@@ -20,7 +20,7 @@
     "dot-notation"
   ],
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "clean:build": "rm -rf lib/",
     "build": "npm run clean:build && babel src -d lib",
     "watch": "npm run clean:build && babel src -d lib -w",
