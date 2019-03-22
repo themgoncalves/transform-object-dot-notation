@@ -1,6 +1,6 @@
 {
   "name": "@themgoncalves/transform-object-dot-notation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transform object string dot notation into object reference",
   "author": "Marcos Gonçalves <contact@themgoncalves.com>",
   "license": "MIT",
