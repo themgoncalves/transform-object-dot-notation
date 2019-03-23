@@ -56,8 +56,26 @@ const obj = {
   },
 };
 
-const baz = obj['foo.bar.baz'] () // hello world
+const baz = obj['foo.bar.baz']() // hello world
 ```
+
+### With `Optional Chaining` Proposal
+
+```js
+const obj = {
+  foo: {
+    bar: {
+      baz: 30,
+    },
+  },
+};
+
+const safe = obj['foo?.quiz?.baz'] // undefined
+```
+
+In this case, `transform-object-dot-notation` **should be placed before** [`@babel/plugin-proposal-optional-chaining`](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining)
+
+
 ## Installation
 
 ```sh
@@ -96,40 +114,10 @@ require("@babel/core").transform("code", {
 });
 ```
 
-
-## Plugin Options
-
-#### `optionalChaining`
-
-Type: `boolean`
-Default: `false`
-
-When `true`, this transform will output the object  _dot notation_ reference
-as [Optional Chaining](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining).
-
-In that case, `transform-object-dot-notation` **should be placed before** `@babel/plugin-proposal-optional-chaining`
-
-**Example**
-
-In
-
-```js
-obj['foo.bar.baz']
-```
-
-Out (`optionalChaining === true`)
-
-```js
-obj.foo?.bar?.baz
-```
-
-Out (`optionalChaining === false`)
-
-```js
-obj.foo.bar.baz
-```
-
 ## Release History
+* 0.1.2
+    * FIX: `optional chaining` transform
+    * DEPRECATE: `optionalChaining` option. Usage no longer requires settings specification.
 * 0.1.1
     * First release
     * NEW: `optionalChaining` option
