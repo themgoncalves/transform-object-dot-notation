@@ -75,6 +75,7 @@ const safe = obj['foo?.quiz?.baz'] // undefined
 
 In this case, `transform-object-dot-notation` **should be placed before** [`@babel/plugin-proposal-optional-chaining`](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining)
 
+<br />
 
 ## Installation
 
@@ -113,6 +114,8 @@ require("@babel/core").transform("code", {
   plugins: ["@themgoncalves/transform-object-dot-notation"]
 });
 ```
+
+<br />
 
 ## Release History
 * 0.1.2
