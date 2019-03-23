@@ -2,7 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import { expect } from 'chai'
 import { transformFileSync } from '@babel/core'
-import plugin from '../lib/index'
+import transformObjectDotNotation from '../lib/index'
+import proposalOptionalChaining from '@babel/plugin-proposal-optional-chaining'
 
 describe('Check', () => {
   const fixturesDir = path.join(__dirname, 'fixtures');
@@ -15,7 +16,8 @@ describe('Check', () => {
       const actual = transformFileSync(inputPath, {
         babelrc: false,
         plugins: [
-          [plugin, { optionalChaining: test === 'optional-chaining' }]
+          [transformObjectDotNotation],
+          [proposalOptionalChaining]
         ]
       }).code;
 
